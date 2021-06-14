@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export const Greeter = (props) => {
-  const { name } = props
+  const {
+    name = 'Stranger'
+  } = props
 
   return (
     <h1>
@@ -11,9 +13,9 @@ export const Greeter = (props) => {
   )
 }
 
-Greeter.defaultProps = {
-  name: 'Stranger'
-}
+// Greeter.defaultProps = {
+//   name: 'Stranger'
+// }
 
 Greeter.propTypes = {
   name: PropTypes.string.isRequired
