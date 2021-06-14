@@ -11,6 +11,10 @@ export const Greeter = (props) => {
   )
 }
 
+Greeter.defaultProps = {
+  name: 'Stranger'
+}
+
 Greeter.propTypes = {
   name: PropTypes.string.isRequired
 }
