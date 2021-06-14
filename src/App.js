@@ -12,7 +12,7 @@ export const Greeter = (props) => {
 }
 
 Greeter.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string.isRequired
 }
 
 export const App = () => {
